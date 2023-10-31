@@ -1,9 +1,10 @@
 # qantas_code_exercise
 Code exercise interview for Machine Learning Data Engineer role
 
-## Getting Started (For Mac OS or Linux)
+## CurrencyConverter
+A python module that converts values in various currencies into AUD. This module will have two inputs, both formatted as CSV files.
 
----
+## Getting Started (For Mac OS or Linux)
 
 ### Installation on virtual environment
 1. Using terminal, navigate to *qantas-code-exercise* directory
