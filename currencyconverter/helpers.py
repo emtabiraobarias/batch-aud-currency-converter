@@ -9,6 +9,8 @@ def read_csv_to_df(filepath, schema):
 # Create graph from df
 def translate_df_to_graph(df_data):
     graph = nx.from_pandas_edgelist(df_data, 'FromCurrency', 'ToCurrency', 'Amount')
+    # must be a directed graph given the one-way factual relationship between from-to currency
+    graph = graph.to_directed()
     return graph
 
 # Query graph given start and end point
@@ -18,8 +20,3 @@ def get_path(graph, source, target):
         return path
     else:
         return []
-    
-def format_return_to_string_list(df):
-    set_list = list(zip(df['Index'], df['AUD']))
-    print(set_list)
-    
