@@ -4,6 +4,8 @@ Code exercise interview for Machine Learning Data Engineer role
 ## CurrencyConverter
 A python module that converts values in various currencies into AUD. This module will have two inputs, both formatted as CSV files.
 
+The module translates pandas DataFrame retrieved from currency conversion database (csv file) to a Networkx Graph using source and target currency values as nodes, and conversion as edges. When an optimal path is found, the edges of the traversed nodes, i.e., currency values, are daisy-chain-mutliplied to get the desired currency-converted amount. 
+
 ## Getting Started (For Mac OS or Linux)
 
 ### Installation on virtual environment
