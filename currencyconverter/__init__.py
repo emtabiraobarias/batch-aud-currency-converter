@@ -1,1 +1,1 @@
-from .core import convert_to_aud, read_input, read_conversion_database
+from .core import convert_to_aud, read_input, read_conversion_database, convert_to_currency
