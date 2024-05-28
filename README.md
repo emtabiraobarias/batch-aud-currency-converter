@@ -1,5 +1,5 @@
-# qantas_code_exercise
-Code exercise interview for Machine Learning Data Engineer role
+# batch-aud-currency-converter
+Coding exercise 
 
 ## CurrencyConverter
 A python module that converts values in various currencies into AUD. This module will have two inputs, both formatted as CSV files.
